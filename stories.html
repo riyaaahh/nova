@@ -4,19 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Client Stories - Liberty</title>
+    <title>Client Stories - NOVA</title>
 </head>
+<script>
+    function toggleMenu() {
+        const sidebar = document.getElementById("sidebar");
+        
+        if (sidebar.style.right === "0px") {
+            sidebar.style.right = "-250px";
+        } else {
+            sidebar.style.right = "0px";
+        }
+    }
+</script>
+
 <body>
+
     <header>
-        <div class="logo">LIBERTY</div>
-        <nav>
+        <div class="logo">NOVA</div>
+    
+        <!-- Navigation -->
+        <nav class="nav-links">
             <a href="home.html">Home</a>
             <a href="about.html">About us</a>
             <a href="offer.html">Offer</a>
             <a href="stories.html">Stories</a>
             <a href="contact.html">Contact</a>
         </nav>
+    
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleMenu()">✕</div>
+
+        <a href="home.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="offer.html">Offer</a>
+        <a href="stories.html">Stories</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
 <section class="stories-section">
     <h1>CLIENT STORIES</h1>
@@ -26,7 +59,7 @@
         <div class="story-box">
             <h3>Raj ram singh</h3>
             <p>
-               My car badly needed repair so early in the morning and Liberty came 
+               My car badly needed repair so early in the morning and NOVA came 
                through at 4:30 am! Talk about excellent customer service!
             </p>
         </div>
@@ -42,7 +75,7 @@
         <div class="story-box">
             <h3>Naga raju</h3>
             <p>
-                Liberty has assisted me from start to finish. They listened to what I needed 
+                NOVA has assisted me from start to finish. They listened to what I needed 
                 and suggested models based on my budget.
             </p>
         </div>

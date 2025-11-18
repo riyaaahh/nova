@@ -4,31 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Offers - Liberty</title>
+    <title>Offers - NOVA</title>
 </head>
-<body>
+<script>
+  function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      
+      if (sidebar.style.right === "0px") {
+          sidebar.style.right = "-250px";
+      } else {
+          sidebar.style.right = "0px";
+      }
+  }
+</script>
 
+<script>
+  function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      
+      if (sidebar.style.right === "0px") {
+          sidebar.style.right = "-250px";
+      } else {
+          sidebar.style.right = "0px";
+      }
+  }
+</script>
 
-    <header>
-        <div class="logo">LIBERTY</div>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="offer.html">Offer</a>
-            <a href="stories.html">Stories</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<body class="contact-page">
+
+  <header>
+      <div class="logo">NOVA</div>
+  
+      <!-- Navigation -->
+      <nav class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="offer.html">Offer</a>
+          <a href="stories.html">Stories</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+  
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </header>
+  
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleMenu()">✕</div>
+
+      <a href="home.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="offer.html">Offer</a>
+      <a href="stories.html">Stories</a>
+      <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleMenu()">✕</div>
+
+      <a href="home.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="offer.html">Offer</a>
+      <a href="stories.html">Stories</a>
+      <a href="contact.html">Contact</a>
+  </div>
     <section class="contact-section">
         <div class="contact-overlay"></div>
     
         <div class="contact-content">
           <div class="left-side">
-            <h2 class="contact-logo">LIBERTY</h2>
+            <h2 class="contact-logo">NOVA</h2>
             <p class="contact-sub">Hand car wash &amp; detailing</p>
             <p class="contact-info">
               9876 543 210<br />
-              <a href="mailto:librooslibertycarwash.com">@librooslibertycarwash.com</a>
+              <a href="mailto:libroosNOVAcarwash.com">@libroosnovacarwash.com</a>
             </p>
     
             <div class="quick-menu">

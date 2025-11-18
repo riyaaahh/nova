@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Liberty Car Wash</title>
+    <title>Nova Car Wash</title>
 </head>
+<script>
+    function toggleMenu() {
+        const sidebar = document.getElementById("sidebar");
+        
+        if (sidebar.style.right === "0px") {
+            sidebar.style.right = "-250px";
+        } else {
+            sidebar.style.right = "0px";
+        }
+    }
+</script>
+
 <body>
 
     <header>
-        <div class="logo">LIBERTY</div>
-        <nav>
+        <div class="logo">NOVA</div>
+    
+        <!-- Navigation -->
+        <nav class="nav-links">
             <a href="home.html">Home</a>
             <a href="about.html">About us</a>
             <a href="offer.html">Offer</a>
             <a href="stories.html">Stories</a>
             <a href="contact.html">Contact</a>
         </nav>
+    
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleMenu()">✕</div>
+
+        <a href="home.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="offer.html">Offer</a>
+        <a href="stories.html">Stories</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <section class="hero">
         <div class="content">
@@ -37,7 +69,7 @@
         <div class="about-text">
             <h1>About us</h1>
             <div class="abt-para">
-                Liberty car wash, we believe your car deserves the same care and attention you do. Our mission is
+                Nova car wash, we believe your car deserves the same care and attention you do. Our mission is
 simple: to provide a spotless, shining, and safe clean every time. With advanced equipment, eco-
 friendly products, and a dedicated team, we ensure your vehicle gets the best treatment—whether
 it’s a quick wash or a detailed service. We pride ourselves on quality, convenience, and customer
@@ -46,44 +78,49 @@ satisfaction, making every visit a smooth and refreshing experience for you and 
         </div>
     </section>
 
+  
     <section class="offer-section">
         <h1>CURRENT OFFERS</h1>
     
-        <div class="offer-container">
-            
-            <div class="offers-list">
+        <div class="offer-row">
     
-                <div class="offer-box">
-                    <h2>1</h2>
+            <div class="offer-card">
+                <img src="./assets/offers_a.jpg" alt="">
+                <div class="offer-text">
                     <h3>Brand New Models</h3>
-                    <p>Browse and buy the brand's best available models</p>
+                    <p>Browse and choose from our latest high–performance vehicles.</p>
                 </div>
-    
-                <div class="offer-box">
-                    <h2>2</h2>
-                    <h3>Full Service</h3>
-                    <p>Car repair and maintenance available 24/7</p>
-                </div>
-    
-                <div class="offer-box">
-                    <h2>3</h2>
-                    <h3>Pre-owned Vehicles</h3>
-                    <p>Certified pre-owned Mahanta cars for every budget</p>
-                </div>
-    
-                <div class="offer-box">
-                    <h2>4</h2>
-                    <h3>Custom Details</h3>
-                    <p>Elevate your ride with custom-made upgrades</p>
-                </div>
-    
             </div>
     
-            <div class="offer-image">
-                <img src="./assets/car_c.jpg" alt="Car Wash Image">
+            <div class="offer-card">
+                <img src="./assets/offers_b.jpg" alt="">
+                <div class="offer-text">
+                    <h3>Full Service Facility</h3>
+                    <p>24/7 repair and maintenance service available for all vehicles.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="offer-row">
+    
+            <div class="offer-card">
+                <img src="./assets/offers_c.jpg" alt="">
+                <div class="offer-text">
+                    <h3>Pre-Owned Certified Cars</h3>
+                    <p>Budget–friendly cars inspected and certified for quality.</p>
+                </div>
+            </div>
+    
+            <div class="offer-card">
+                <img src="./assets/offers_d.jpg" alt="">
+                <div class="offer-text">
+                    <h3>Custom Upgrades</h3>
+                    <p>Personalize your car with premium modification options.</p>
+                </div>
             </div>
     
         </div>
+    
     </section>
     <section class="stories-section">
         <h1>CLIENT STORIES</h1>
@@ -93,7 +130,7 @@ satisfaction, making every visit a smooth and refreshing experience for you and 
             <div class="story-box">
                 <h3>Raj ram singh</h3>
                 <p>
-                   My car badly needed repair so early in the morning and Liberty came 
+                   My car badly needed repair so early in the morning and NOVA came 
                    through at 4:30 am! Talk about excellent customer service!
                 </p>
             </div>
@@ -109,7 +146,7 @@ satisfaction, making every visit a smooth and refreshing experience for you and 
             <div class="story-box">
                 <h3>Naga raju</h3>
                 <p>
-                    Liberty has assisted me from start to finish. They listened to what I needed 
+                    NOVA has assisted me from start to finish. They listened to what I needed 
                     and suggested models based on my budget.
                 </p>
             </div>
@@ -122,11 +159,11 @@ satisfaction, making every visit a smooth and refreshing experience for you and 
     
         <div class="contact-content">
           <div class="left-side">
-            <h2 class="contact-logo">LIBERTY</h2>
+            <h2 class="contact-logo">NOVA</h2>
             <p class="contact-sub">Hand car wash &amp; detailing</p>
             <p class="contact-info">
               9876 543 210<br />
-              <a href="mailto:librooslibertycarwash.com">@librooslibertycarwash.com</a>
+              <a href="mailto:libroosNOVAcarwash.com">@libroosnovacarwash.com</a>
             </p>
     
             <div class="quick-menu">
