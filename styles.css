@@ -247,7 +247,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 60px;
+  padding: 40px 40px;
+ 
 }
 .about-section::after {
   content: "";
@@ -294,6 +295,7 @@ nav a {
 
   .about-section {
     padding: 0 40px;
+    padding-top: 60px;
   }
 }
 
@@ -302,7 +304,7 @@ nav a {
   .about-section {
     padding: 0 20px;
     height: auto;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 150px;
   }
 
@@ -339,7 +341,7 @@ nav a {
   text-align: center;
   font-size: 60px;
   font-weight: 800;
-  color: #36b9d6;
+  color: #0189a8;
   margin-bottom: 80px;
 }
 
@@ -423,6 +425,7 @@ nav a {
   .offer-section h1 {
     font-size: 40px;
     margin-bottom: 40px;
+    padding-top: 80px;
   }
 
   .offer-row {
@@ -600,20 +603,7 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-.contact-page header .logo {
-  display: none;
-}
-/* Center links ONLY on contact page */
-.contact-page header nav {
-  margin: 0 auto;
-  justify-content: center;
-  width: auto;
-}
 
-/* Adjust link spacing */
-.contact-page header nav a {
-  margin: 0 20px;
-}
 .contact-overlay {
   position: absolute;
   inset: 0;
@@ -772,6 +762,7 @@ button:hover {
     text-align: center;
     gap: 40px;
     padding: 20px;
+    padding-top: 80px;
   }
 
   .left-side,
